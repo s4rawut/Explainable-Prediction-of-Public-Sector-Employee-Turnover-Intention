@@ -2,15 +2,27 @@
 
 This repository contains the source code, data preprocessing notebooks, and the interactive Streamlit dashboard for the thesis "Explainable Prediction of Public-Sector Employee Turnover Intention".
 
-## Project Structure
+## 📂 Project Structure
 
-- dashboard/: Contains the `app.py` script for the Streamlit dashboard, providing Policy Simulation and Explainable AI (XAI) insights.
-- notebooks/: Jupyter Notebooks used for Exploratory Data Analysis (EDA), feature engineering, and model training.
-- models/: Serialized Machine Learning models (e.g., XGBoost, LightGBM) used for predictions.
-- data/: Contains sample or anonymized datasets required to run the dashboard. Download dataset is 2022_OPM_FEVS_PRDF.csv via https://drive.google.com/file/d/1ekqjSOp_33AmqoVZhd1NZ2FX-h-2LOXS/view?usp=drive_link *(Note: Raw sensitive data is strictly excluded).*
-- original dataset is OPM Federal Employee Viewpoint Survey (FEVS) 2022 Public Release Data File via https://www.opm.gov/fevs/public-data-file/
+- `dashboard/`: Contains the `app.py` script for the Streamlit dashboard, providing Policy Simulation and Explainable AI (XAI) insights.
+- `notebooks/`: Jupyter Notebooks used for Exploratory Data Analysis (EDA), feature engineering, and model training.
+- `models/`: Serialized Machine Learning models (e.g., XGBoost, LightGBM) used for predictions.
+- `data/`: Contains sample or anonymized datasets required to run the dashboard. *(Note: Large datasets and raw sensitive data are excluded from the repository).*
 
-## Getting Started
+## 📊 Dataset & Setup
+
+### 1. Download the Dataset
+To run the dashboard or execute the notebooks, download the preprocessed dataset:
+* **Preprocessed Dataset (2022):** Download [2022_OPM_FEVS_PRDF.csv](https://drive.google.com/file/d/1ekqjSOp_33AmqoVZhd1NZ2FX-h-2LOXS/view?usp=drive_link) (Google Drive) and place it inside the `data/` directory.
+
+### 2. Original / Other Years Dataset
+If you want to train models or run predictions for other years:
+* **Original FEVS Public Release Data Files:** Access them from the [OPM FEVS Public Data Page](https://www.opm.gov/fevs/public-data-file/).
+* **Generalizing to other years:** You can download files for other years, run the corresponding data preprocessing notebooks in the `notebooks/` folder, and train new serialized models.
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -20,12 +32,13 @@ This repository contains the source code, data preprocessing notebooks, and the 
 ### Installation
 
 1. Clone the repository to your local machine:
-   bash
-   git clone <your-github-repository-url>
-   cd <repository-folder-name>
+   ```bash
+   git clone https://github.com/s4rawut/Explainable-Prediction-of-Public-Sector-Employee-Turnover-Intention.git
+   cd Explainable-Prediction-of-Public-Sector-Employee-Turnover-Intention
+   ```
 
 2. (Optional but recommended) Create and activate a virtual environment:
-   bash
+   ```bash
    # On macOS/Linux
    python3 -m venv venv
    source venv/bin/activate
@@ -33,18 +46,22 @@ This repository contains the source code, data preprocessing notebooks, and the 
    # On Windows
    python -m venv venv
    venv\Scripts\activate
+   ```
 
 3. Install the required dependencies:
-   bash
+   ```bash
    pip install -r requirements.txt
+   ```
 
 ### Running the Dashboard
 
 To launch the interactive dashboard, run the following command from the root directory of the project:
 
-bash
+```bash
 streamlit run dashboard/app.py
+```
 The dashboard will open automatically in your default web browser.
 
 ## 🔒 Note on Data Privacy
+
 Due to privacy regulations and academic ethics, the original raw dataset containing Personally Identifiable Information (PII) of public-sector employees is **not included** in this repository. Any data provided herein is either fully anonymized or synthetic, intended solely for demonstrating the functionality of the predictive models and the HR policy simulation dashboard.
