@@ -8,6 +8,7 @@ This repository contains the source code, data preprocessing notebooks, and the 
 - notebooks/: Jupyter Notebooks used for Exploratory Data Analysis (EDA), feature engineering, and model training.
 - models/: Serialized Machine Learning models (e.g., XGBoost, LightGBM) used for predictions.
 - data/: Contains sample or anonymized datasets required to run the dashboard. Download dataset is 2022_OPM_FEVS_PRDF.csv via https://drive.google.com/file/d/1ekqjSOp_33AmqoVZhd1NZ2FX-h-2LOXS/view?usp=drive_link *(Note: Raw sensitive data is strictly excluded).*
+- original dataset is OPM Federal Employee Viewpoint Survey (FEVS) 2022 Public Release Data File via https://www.opm.gov/fevs/public-data-file/
 
 ## Getting Started
 
