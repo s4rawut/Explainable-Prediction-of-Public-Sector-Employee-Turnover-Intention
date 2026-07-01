@@ -7,7 +7,6 @@ This repository contains the source code, data preprocessing notebooks, and the 
 - dashboard/: Contains the `app.py` script for the Streamlit dashboard, providing Policy Simulation and Explainable AI (XAI) insights.
 - notebooks/: Jupyter Notebooks used for Exploratory Data Analysis (EDA), feature engineering, and model training.
 - models/: Serialized Machine Learning models (e.g., XGBoost, LightGBM) used for predictions.
-- src/: Supplementary source code and utilities for data processing.
 - data/: Contains sample or anonymized datasets required to run the dashboard. *(Note: Raw sensitive data is strictly excluded).*
 
 ## Getting Started
