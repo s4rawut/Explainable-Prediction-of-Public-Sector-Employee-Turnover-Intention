@@ -53,15 +53,6 @@ If you want to train models or run predictions for other years:
    pip install -r requirements.txt
    ```
 
-### Running the Dashboard
-
-To launch the interactive dashboard, run the following command from the root directory of the project:
-
-```bash
-streamlit run dashboard/app.py
-```
-The dashboard will open automatically in your default web browser.
-
 ### Reproducing the Pipeline (Model Training & Analysis)
 
 If you want to preprocess the data, train the models, or perform explanation analysis from scratch, execute the notebooks in the `notebooks/` directory in the following sequential order:
@@ -72,6 +63,15 @@ If you want to preprocess the data, train the models, or perform explanation ana
 4. **`04_Model_Interpretation.ipynb`** – Explainable AI (XAI) calculations using SHAP to interpret model predictions.
 
 After running these notebooks, the trained model files will be saved in the `models/` directory, which the Streamlit dashboard (`app.py`) uses for predictions.
+
+### Running the Dashboard
+
+To launch the interactive dashboard, run the following command from the root directory of the project:
+
+```bash
+streamlit run dashboard/app.py
+```
+The dashboard will open automatically in your default web browser.
 
 ## 🔒 Note on Data Privacy
 
