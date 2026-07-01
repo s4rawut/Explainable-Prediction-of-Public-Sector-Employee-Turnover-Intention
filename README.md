@@ -62,6 +62,17 @@ streamlit run dashboard/app.py
 ```
 The dashboard will open automatically in your default web browser.
 
+### Reproducing the Pipeline (Model Training & Analysis)
+
+If you want to preprocess the data, train the models, or perform explanation analysis from scratch, execute the notebooks in the `notebooks/` directory in the following sequential order:
+
+1. **`01_Data_Exploration.ipynb`** – Exploratory Data Analysis (EDA) to understand the dataset's features and target variable.
+2. **`02_Data_Preprocessing.ipynb`** – Data cleaning, handling missing values, encoding, and feature engineering.
+3. **`03_Modeling.ipynb`** – Training, evaluation, and serialization (saving) of the machine learning models.
+4. **`04_Model_Interpretation.ipynb`** – Explainable AI (XAI) calculations using SHAP to interpret model predictions.
+
+After running these notebooks, the trained model files will be saved in the `models/` directory, which the Streamlit dashboard (`app.py`) uses for predictions.
+
 ## 🔒 Note on Data Privacy
 
 Due to privacy regulations and academic ethics, the original raw dataset containing Personally Identifiable Information (PII) of public-sector employees is **not included** in this repository. Any data provided herein is either fully anonymized or synthetic, intended solely for demonstrating the functionality of the predictive models and the HR policy simulation dashboard.
